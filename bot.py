@@ -64,6 +64,7 @@ async def on_message(ctx):
     ordinary_sausage = 'https://www.youtube.com/c/OrdinarySausage/videos'
     gogo_anime_url = 'https://www3.gogoanime.cm/'
     crunchy_roll_url = 'https://www.crunchyroll.com/en-gb'
+    naruto = 'https://www3.gogoanime.cm/category/naruto'
 
     gifs = ['https://media.giphy.com/media/WoUynUguj7wEP7HN0T/giphy.gif',
             'https://media.giphy.com/media/S9i8jJxTvAKVHVMvvW/giphy.gif',
@@ -78,6 +79,7 @@ async def on_message(ctx):
     embed.add_field(name='GoGo Anime', value=gogo_anime_url, inline=False)
     embed.add_field(name='Daily Dose of Internet', value=daily_dose_of_internet, inline=False)
     embed.add_field(name='Ordinary Sausage', value=ordinary_sausage, inline=False)
+    embed.add_field(name='Naruto', value=naruto, inline=False)
     embed.set_image(url=gifs[randint(0, len(gifs) - 1)])
 
     response_embed = embed
